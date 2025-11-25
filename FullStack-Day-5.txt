@@ -1,0 +1,42 @@
+Day 5:
+========
+
+1) Frozenset Data Type
+==============================
+A frozenset is an immutable version of a set.
+It contains unique elements like a set.
+Supports operations like union, intersection, difference.
+Cannot add or remove elements.
+Useful when you need a set as a dictionary key or store in other sets.
+
+Example:
+fs = frozenset([1, 2, 3, 3])
+print(fs)          # frozenset({1,2,3})
+print(fs.union({4}))  
+
+
+2) Range Data Type
+=========================
+range() represents a sequence of numbers, often used in loops. It does not create a list in memory — it generates values on demand (memory efficient).
+Syntax: range(start, stop, step)
+Default start = 0
+Default step = 1
+
+Example:
+r = range(1, 5)
+for i in r:
+    print(i)   # 1 2 3 4
+
+
+3) None Data Type
+=========================
+None represents the absence of a value.
+It is a special constant.
+Used to show “no value”, “not assigned”, or “empty return”.
+
+Type: NoneType
+
+Example:
+x = None
+print(x)          # None
+print(type(x))    # <class 'NoneType'>
